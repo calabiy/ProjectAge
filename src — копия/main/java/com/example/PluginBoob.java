@@ -75,7 +75,7 @@ public class PluginBoob extends JavaPlugin implements TabExecutor {
     public List<String> onTabComplete(@NotNull CommandSender sender, @NotNull Command command, @NotNull String alias, @NotNull String[] args) {
         if (command.getName().equalsIgnoreCase("size")) {
             if (args.length == 1) {
-                return null; // Return list online
+                return null; 
             }
             if (args.length == 2) {
                 return Arrays.asList("0.65", "0.75", "0.85", "1.0");
@@ -84,3 +84,4 @@ public class PluginBoob extends JavaPlugin implements TabExecutor {
         return Collections.emptyList();
     }
 }
+
